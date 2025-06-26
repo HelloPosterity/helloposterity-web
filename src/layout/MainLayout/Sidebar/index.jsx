@@ -55,7 +55,7 @@ function Sidebar() {
     return (
       <>
         {downMD ? (
-          <Box sx={drawerSX}>
+          <Box sx={{ ...drawerSX, height: 'calc(100vh - 88px)', overflowY: 'auto' }}>
             <MenuList />
             {drawerOpen && drawerContent}
           </Box>

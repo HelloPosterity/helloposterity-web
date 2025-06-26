@@ -10,11 +10,11 @@ export default function ErrorBoundary() {
 
   if (isRouteErrorResponse(error)) {
     if (error.status === 404) {
-      return <Alert color="error">Error 404 - This page doesn't exist!</Alert>;
+      return <Alert color="error">Error 404 - This page doesn&apos;t exist!</Alert>;
     }
 
     if (error.status === 401) {
-      return <Alert color="error">Error 401 - You aren't authorized to see this</Alert>;
+      return <Alert color="error">Error 401 - You aren&apos;t authorized to see this</Alert>;
     }
 
     if (error.status === 503) {
